@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            document.write("xin chào bạn!");
+        }
+        hello();
+
+        function helloUser(fullName){
+            document.write(`<h1>Xin chào ${fullName}</h1>`);
+        }
+        helloUser("Lê Công Thành Vinh");
+
+        var a = +prompt("Nhập vào số a");
+        var b = +prompt("Nhập vào số b");
+        function sum(a,b){
+            var sum = a + b;
+            document.write(`<h1>${a} + ${b} = ${a+b}</h1>`)
+        }
+        sum(a,b);
+
+        var c = +prompt("Nhập vào số c");
+        function chanLe(num){
+            if (num%2==0) {
+                document.write("<h1>Đây là số chẵn</h1>");
+                return;
+            }
+            document.write("<h1>Đây là số lẻ</h1>");
+        }
+
+        chanLe(c);
+
+        function sumArray(array) {
+            var sumArray = 0;
+            for(var i=0;i<array.length; i++){
+                sumArray +=array[i];
+            }
+            return sumArray;
+        }
+        var array =[1,2,3];
+        var n = sumArray(array);
+        document.write(n);
+
+        var arr = ["A", 1, "B"];
+        var d = prompt("Nhập vào d");
+        function checkNum(arrayC,y){
+            for (var i = 0; i < arrayC.length; i++) {
+                if (y==arrayC[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        console.log(checkNum(arr,d));
+    </script>
+</body>
+</html>

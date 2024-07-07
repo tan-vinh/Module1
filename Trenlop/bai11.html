@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = prompt("Nhập vào tuổi");
+        if (age > 18) {
+            document.write("<h1>Mời bạn xem phim</h1>");
+        }
+
+        if (age >= 18) {
+            document.write("<h1>Mời bạn xem phim</h1>");
+        } else {
+            document.write("<h1>Mời bạn xem Doraemon</h1>");
+        }
+
+        if (age >= 65) {
+            document.write("<h1>Mời bạn xem thời sự</h1>");
+        }else if (age >= 18) {
+            document.write("<h1>Mời bạn xem phim</h1>");
+        } else {
+            document.write("<h1>Mời bạn xem Doraemon</h1>");
+        }
+
+        var n = prompt("nhập số");
+        if (n % 2 == 0) {
+            document.write("<h1>số chẵn</h1>");
+        } else {
+            document.write("<h1>số lẻ</h1>");
+        }
+    </script>
+</body>
+</html>

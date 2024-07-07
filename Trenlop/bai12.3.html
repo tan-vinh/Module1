@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nyc = ["A","B","C","D"];
+        var keyword = prompt("nhập tên cần tìm");
+        var a = false;
+        for (var i = 0; i < nyc.length; i++) {
+            if (nyc[i]===keyword) {
+                a = true;
+                break;
+            }
+        }
+        if (a==true) {
+            document.write("có");
+        } else {
+            document.write("không");
+        }
+    </script>
+</body>
+</html>

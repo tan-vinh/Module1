@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section1{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.item{
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+}
+
+.section2{
+    background-color: aquamarine;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.section3{
+    background-color: aquamarine;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.right-item{
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+    border: 1px solid black;
+}

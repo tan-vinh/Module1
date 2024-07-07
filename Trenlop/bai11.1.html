@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("Nhập vào số từ 2 - 8 "));
+        switch (n) {
+            case 2:
+                document.write("<h1>Hôm nay là thứ hai</h1>");
+                break;
+            case 3:
+                document.write("<h1>Hôm nay là thứ ba</h1>");
+                break;
+            case 4:
+                document.write("<h1>Hôm nay là thứ tư</h1>");
+                break;
+            case 5:
+                document.write("<h1>Hôm nay là thứ năm</h1>");
+                break;
+            case 6:
+                document.write("<h1>Hôm nay là thứ sáu</h1>");
+                break;
+            case 7:
+                document.write("<h1>Hôm nay là thứ bảy</h1>");
+                break;
+            case 8:
+                document.write("<h1>Hôm nay là chủ nhật</h1>");
+                break;
+            default:
+                document.write("không đúng định dạng nhập vào");
+                break;
+        }
+
+        var chu = prompt("Nhập từ a - z ");
+        switch (chu) {
+            case "u": case "e": case "o": case "a": case "i":
+                document.write("<h1>Đây là nguyên âm</h1>");
+                break;
+            default:
+                document.write("<h1>Đây là phụ âm</h1>");
+                break;
+        }
+    </script>
+</body>
+</html>

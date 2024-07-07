@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        var n = +prompt("nhập số phần tử");
+        for (var i=0; i<n; i++){
+            arr[i] = +prompt("phần tử thứ " +(i+1));
+        }
+        function Max(array) {
+            var max = array[0];
+            for (var i = 0; i < array.length; i++) {
+                if(max < array[i]){
+                    max = array[i];
+                }
+            }
+            return max;
+        }
+        console.log(Max(arr));
+    </script>
+</body>
+</html>
