@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {
+            msv:"s01",
+            fullname:"Lê Công Thành Vinh",
+            age: 24,
+            study: function(course){
+                console.log(this.fullname + "đang học môn" + course);
+            },
+            showInfo: function(){
+                document.write(`<h1>Mã sinh viên : ${this.msv}</h1>`);
+                document.write(`<h1>Họ và tên : ${this.fullname}</h1>`);
+            }
+        }
+
+        console.log("Họ và tên : " + student.fullname);
+
+        student.study("JS");
+
+        student.showInfo();
+
+        console.log(student);
+    </script>
+</body>
+</html>

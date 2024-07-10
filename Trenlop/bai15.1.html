@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var category1 = {name : "Áo sơ mi", link: "lctv.com"};
+        var category2 = {name : "Áo kaki", link: "shoppe"};
+        var categories = {category1, category2};
+
+        function render(){
+            var html = "";
+            for (var i = 0; i < categories.length; i++) {
+                html = html + `<li><a href="${categories[i].link}">${categories[i].name}</a></li>`;
+            }
+            console.log(html);
+            document.write(`<ul>
+                ${html}
+            </ul>`);
+        }
+
+        render();
+    </script>
+</body>
+</html>
